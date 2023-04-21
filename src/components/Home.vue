@@ -1,13 +1,13 @@
 <template>
-  <div class="app__container">
-    <div class="app__title">
+  <div class="home__container">
+    <div class="home__title">
       <img :src="require('images/logo.png')" width="100" />
       <h1>Vue.js Boilerplate</h1>
     </div>
-    <div class="app__counter">
+    <div class="home__counter">
       <button class="btn" @click="inc">+</button>
       <button class="btn" @click="desc">−</button>
-      <div class="app__count">{{ count }}</div>
+      <div class="home__count">{{ count }}</div>
     </div>
   </div>
 </template>
@@ -16,7 +16,7 @@
 import { Component, Vue } from "vue-property-decorator";
 
 @Component
-export default class App extends Vue {
+export default class Home extends Vue {
   protected count: number = 0;
 
   protected inc(): void {
@@ -29,7 +29,7 @@ export default class App extends Vue {
 </script>
 
 <style scoped lang="scss">
-.app {
+.home {
   &__container {
     display: grid;
     justify-content: center;
