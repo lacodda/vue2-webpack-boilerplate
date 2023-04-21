@@ -1,0 +1,17 @@
+:root {
+    --black: #343434;
+    --blue: #06347e;
+    --white: #ffffff;
+    --teal: #008080;
+    --azure: #31CDDD;
+    --fuxia: #F700F7;
+    --pink: #ec62b5;
+    --violet: #9333ea;
+    --lime: #86efac;
+    --gr-teal-blue: linear-gradient(to right, var(--teal) 0%, var(--blue) 100%);
+    --gr-teal-pink: linear-gradient(to right, var(--teal) 0%, var(--pink) 100%);
+    --gr-azure-fuxia: linear-gradient(to right, var(--azure) 0%, var(--fuxia) 100%);
+    --gr-azure-pink: linear-gradient(var(--azure), var(--pink));
+    --font-size: 20px;
+    --font-family: 'Noto Sans', sans-serif;
+}
