@@ -12,6 +12,7 @@ module.exports = {
     path: paths.build,
     filename: '[name].bundle.js',
     publicPath: '/',
+    assetModuleFilename: 'assets/[hash][ext][query]',
   },
   resolve: {
     modules: [paths.src, 'node_modules'],
@@ -52,7 +53,7 @@ module.exports = {
     // Generates deprecation warning: https://github.com/jantimon/html-webpack-plugin/issues/1501
     new HtmlWebpackPlugin({
       title,
-      favicon: paths.src + '/images/favicon.ico',
+      favicon: paths.src + '/images/logo.png',
       template: paths.src + '/template.html', // template file
       filename: 'index.html', // output file
     }),
