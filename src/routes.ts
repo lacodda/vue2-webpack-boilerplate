@@ -2,16 +2,16 @@ export default [
   {
     path: '/',
     name: 'Home',
-    component: () => import('components/Home.vue')
+    component: async () => await import('components/Home.vue'),
   },
   {
     path: '/about',
     name: 'About',
-    component: () => import('components/About.vue')
+    component: async () => await import('components/About.vue'),
   },
   {
     path: '/info',
     name: 'Info',
-    component: () => import('components/Info.vue')
-  }
+    component: async () => await import('components/Info.vue'),
+  },
 ];

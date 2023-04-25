@@ -7,22 +7,23 @@
     <div class="home__counter">
       <button class="btn" @click="inc">+</button>
       <button class="btn" @click="desc">−</button>
-      <div class="home__count">{{ count }}</div>
+      <div class="home__count">{{count}}</div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Vue } from 'vue-property-decorator';
 
 @Component
 export default class Home extends Vue {
-  protected count: number = 0;
+  count: number = 0;
 
-  protected inc(): void {
+  inc (): void {
     this.count++;
   }
-  protected desc(): void {
+
+  desc (): void {
     this.count--;
   }
 }

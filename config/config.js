@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = {
   paths: {
@@ -7,8 +7,8 @@ module.exports = {
     public: path.resolve(__dirname, '../public'),
     components: path.resolve(__dirname, '../src/components'),
     images: path.resolve(__dirname, '../src/images'),
-    styles: path.resolve(__dirname, '../src/styles'),
+    styles: path.resolve(__dirname, '../src/styles')
   },
   port: 8080,
-  title: 'Vue 2 Boilerplate',
-}
+  title: 'Vue 2 Boilerplate'
+};
