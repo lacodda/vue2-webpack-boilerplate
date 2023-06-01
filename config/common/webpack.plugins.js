@@ -4,14 +4,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const WebpackShellPluginNext = require('webpack-shell-plugin-next');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { isDev } = require('./webpack.helpers');
 const aliases = require('./webpack.aliases');
 
 module.exports = [
   new ForkTsCheckerWebpackPlugin(),
-  // Removes/cleans build folders and unused assets when rebuilding
-  new CleanWebpackPlugin(),
   // Copies files from target to destination folder
   new CopyWebpackPlugin({
     patterns: [

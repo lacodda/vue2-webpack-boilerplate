@@ -30,14 +30,17 @@ module.exports = [
       { loader: 'sass-loader', options: { sourceMap: isDev() } },
     ],
   },
+  // Images: Copy image files to build folder
   {
-    // Assets loader
-    // More information here https://webpack.js.org/guides/asset-modules/
-    test: /\.(gif|jpe?g|tiff|png|webp|bmp|svg|eot|ttf|woff|woff2)$/i,
-    type: 'asset',
+    test: /\.(?:ico|gif|png|jpe?g)$/i,
+    type: 'asset/resource',
     generator: {
       filename: 'assets/[hash][ext][query]',
     },
   },
+  // Fonts and SVGs: Inline files
+  {
+    test: /\.(woff(2)?|eot|ttf|otf|svg|)$/i,
+    type: 'asset/inline',
+  },
 ];
-
