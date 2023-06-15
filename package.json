@@ -28,7 +28,7 @@
   "scripts": {
     "start": "node config/index.mjs --mode=development",
     "build": "node config/index.mjs --mode=production",
-    "serve": "serve dist -p 3000",
+    "serve": "node config/index.mjs --mode=serve",
     "lint": "eslint --ext .js,.ts,.vue src --fix"
   },
   "dependencies": {
