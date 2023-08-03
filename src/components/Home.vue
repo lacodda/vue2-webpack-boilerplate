@@ -1,7 +1,7 @@
 <template>
   <div class="home__container">
     <div class="home__title">
-      <img :src="require('images/logo.png')" width="100" />
+      <img :src="require('images/logo.svg')" width="100" />
       <h1>Vue.js Boilerplate</h1>
     </div>
     <div class="home__counter">
