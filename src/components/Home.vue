@@ -5,8 +5,8 @@
       <h1>Vue.js Boilerplate</h1>
     </div>
     <div class="home__counter">
-      <button class="btn" @click="inc">+</button>
-      <button class="btn" @click="desc">−</button>
+      <button-el size="l" @click="inc">+</button-el>
+      <button-el size="l" @click="desc">−</button-el>
       <div class="home__count">{{count}}</div>
     </div>
   </div>
@@ -42,6 +42,7 @@ export default class Home extends Vue {
   &__title {
     display: flex;
     h1 {
+      font-size: 2.6rem;
       width: max-content;
       text-transform: uppercase;
       background: var(--teal);

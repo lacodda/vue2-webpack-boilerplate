@@ -1,12 +1,11 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import App from 'components/App.vue';
-import routes from './routes';
-import 'styles/index.scss';
+import App from '@/components/App.vue';
+import routes from '@/routes';
+import '@/ui';
 
 Vue.use(VueRouter);
 const router = new VueRouter({ routes });
-Vue.component('navbar', async () => await import('components/Navbar.vue'));
 
 export default new Vue({
   router,

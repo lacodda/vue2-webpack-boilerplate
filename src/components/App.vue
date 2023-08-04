@@ -1,6 +1,10 @@
 <template>
   <div class="app">
-    <navbar />
+    <navbar-el>
+      <router-link to="/">home</router-link>
+      <router-link to="/info">info</router-link>
+      <router-link to="/about">about</router-link>
+    </navbar-el>
     <router-view />
   </div>
 </template>
