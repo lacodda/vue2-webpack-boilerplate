@@ -2,11 +2,11 @@
   <div class="home__container">
     <div class="home__title">
       <img :src="require('images/logo.svg')" width="100" />
-      <h1>Vue.js Boilerplate</h1>
+      <h1>Vue 2 Boilerplate</h1>
     </div>
     <div class="home__counter">
       <button-el size="l" @click="inc">+</button-el>
-      <button-el size="l" @click="desc">−</button-el>
+      <button-el size="l" @click="dec">−</button-el>
       <div class="home__count">{{count}}</div>
     </div>
   </div>
@@ -23,7 +23,7 @@ export default class Home extends Vue {
     this.count++;
   }
 
-  desc (): void {
+  dec (): void {
     this.count--;
   }
 }
@@ -42,7 +42,7 @@ export default class Home extends Vue {
   &__title {
     display: flex;
     h1 {
-      font-size: 2.6rem;
+      font-size: var(--font-size-h1);
       width: max-content;
       text-transform: uppercase;
       background: var(--teal);
